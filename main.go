@@ -44,10 +44,6 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	//fmt.Println(prot)
-	//fmt.Println(prot.Protocol.InnerXML)
-	//fmt.Println(prot.Protocol.InnerXML == "")
-	//fmt.Println(prot.Protocol)
 	if _, err := TestEmpty(string(prot.Protocol)); err != nil {
 		log.Fatalln("zdc")
 	}
